@@ -6,7 +6,7 @@
   "module": "src/index.js",
   "scripts": {
     "start": "npm run doc:start",
-    "build": "webpack --mode=production --config=lib.webpack.config.js",
+    "build": "webpack --mode=production",
     "doc:build": "webpack --mode=production --config=doc/webpack.config.js",
     "doc:start": "webpack-dev-server --mode=development --config=doc/webpack.config.js",
     "test": "jest",
