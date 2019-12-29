@@ -5,9 +5,10 @@
   "main": "dist/foobar.umd.js",
   "module": "src/index.js",
   "scripts": {
-    "start": "webpack-dev-server --config=doc.webpack.config.js",
+    "start": "npm run doc:start",
     "build": "webpack --mode=production --config=lib.webpack.config.js",
-    "build:doc": "webpack --mode=production --config=doc.webpack.config.js",
+    "doc:build": "webpack --mode=production --config=doc/webpack.config.js",
+    "doc:start": "webpack-dev-server --mode=development --config=doc/webpack.config.js",
     "test": "jest",
     "eslint": "eslint src/**/*.js",
     "stylelint": "stylelint src/**/*.css",
